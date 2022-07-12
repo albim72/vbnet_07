@@ -1,0 +1,8 @@
+'Zbuduj klasę DrugaKlasa dziedzczącą klasę PierwszaKlasa,
+'dodaj pole Integer -> c oraz przekaż z dziedziczenia (a,b)
+'zbuduj metodę printABC -> wyświetl wszystkie 3 wartości
+'zbuduj metodę suma() -> wykonaj sumowanie wszysktich 3 wartości
+
+Public Class DrugaKlasa
+
+End Class
