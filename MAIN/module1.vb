@@ -5,6 +5,7 @@ Module Module1
         os1.printOsoba()
         Console.WriteLine(os1.wiekza10lat())
         Console.WriteLine($"Czy osoba jest pracownikiem?? {os1.czyPracownik()}")
+        Console.WriteLine($"BMI wynosi: {Format(os1.bmi(), "0.00")}, opis: {os1.opis_bmi()}")
 
 
         Dim pr1 As Pracownik = New Pracownik("Paweł", "Bloch", 45, 176, 99, "ABC SA", "dyrektor", 12, 9800)
