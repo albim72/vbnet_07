@@ -1,0 +1,3 @@
+stwórz program okienkowy do rejestracji uczestnika konferencji
+podaj imię, nazwisko, opcję wyboru, prezenter - słuchacz
+Wstawione dane , wyświetl w polu etkiety w  dole okna
