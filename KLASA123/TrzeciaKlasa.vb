@@ -17,7 +17,7 @@ Public Class TrzeciaKlasa
     End Function
 
     Public Overrides Function suma() As Integer
-        Return a + b + c + d
+         Return MyBase.suma() + d
     End Function
 
 End Class
