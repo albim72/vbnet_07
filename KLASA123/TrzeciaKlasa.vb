@@ -5,5 +5,19 @@
 'metoda suma nie jest nową metodą tylko przesłoniętą metodą suma() z DrugaKlasa (Overridable)
 
 Public Class TrzeciaKlasa
+  Public d As Integer
+
+    Public Sub New(a As Integer, b As Integer, c As Integer, d As Integer)
+        MyBase.New(a, b, c)
+        Me.d = d
+    End Sub
+
+    Public Function printABCD() As String
+        Console.WriteLine($"a = {a}, b = {b}, c = {c}, d={d}")
+    End Function
+
+    Public Overrides Function suma() As Integer
+        Return a + b + c + d
+    End Function
 
 End Class
