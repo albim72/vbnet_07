@@ -25,4 +25,21 @@ wzrost: {wzrost} cm, waga: {waga} kg  ")
         Return False
 
     End Function
+        
+        Public Function bmi() As Double
+        Return waga / (wzrost / 100) ^ 2
+    End Function
+
+    Public Function opis_bmi() As String
+        If bmi() < 18.5 Then
+            Return "niedowaga"
+        ElseIf bmi() <= 25 Then
+            Return "waga prawidłowa"
+        ElseIf bmi() <= 30 Then
+            Return "nadwaga"
+        Else
+            Return "otyłość"
+
+        End If
+    End Function
 End Class
