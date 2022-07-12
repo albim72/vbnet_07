@@ -15,7 +15,7 @@ Public Class DrugaKlasa
         Console.WriteLine($"a = {a}, b = {b}, c = {c}")
     End Function
 
-    Public Function suma() As Integer
+ Public Overridable Function suma() As Integer
         Return a + b + c
     End Function
 End Class
