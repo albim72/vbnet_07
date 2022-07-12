@@ -1,0 +1,4 @@
+'Napisz klasę Sportowiec -> wprowadż następujące Pola (imie, nazwisko, wiek, wzrost, waga) a następnie
+'dopisz pola lokalne: dyscyplina, lata_uprawiania, best_wynik
+'napisz metodę: infosport() -> która ma wypisyać dane lokalne: dyscyplina, lata_uprawiania, best_wynik
+'Stwórz instancję tej klasy (obiekt) w module głównym i wykonaj na nim wszystkie możliwe metody
