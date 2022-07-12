@@ -6,6 +6,7 @@ Module Module1
         Console.WriteLine(os1.wiekza10lat())
         Console.WriteLine($"Czy osoba jest pracownikiem?? {os1.czyPracownik()}")
         Console.WriteLine($"BMI wynosi: {Format(os1.bmi(), "0.00")}, opis: {os1.opis_bmi()}")
+        Console.WriteLine($"Zapotrzebowanie energetyczne: {Format(os1.policzppm("K"), "0.00")} kcal")
 
 
         Dim pr1 As Pracownik = New Pracownik("Paweł", "Bloch", 45, 176, 99, "ABC SA", "dyrektor", 12, 9800)
@@ -13,6 +14,8 @@ Module Module1
         pr1.printPracownik()
         Console.WriteLine(pr1.wiekza10lat())
         Console.WriteLine($"Czy osoba jest pracownikiem?? {pr1.czyPracownik()}")
+        Console.WriteLine($"BMI wynosi: {Format(pr1.bmi(), "0.00")}, opis: {pr1.opis_bmi()}")
+        Console.WriteLine($"Zapotrzebowanie energetyczne: {Format(pr1.policzppm("M"), "0.00")} kcal")
 
 
         Dim s1 As Student = New Student("Ola", "Nowik", 22, 170, 56, 5454, "informatyka", 3, "ABC", "sekretarka", 1, 2300)
