@@ -42,4 +42,15 @@ wzrost: {wzrost} cm, waga: {waga} kg  ")
 
         End If
     End Function
+        
+    Public Function policzppm(plec) As Double
+        If plec = "K" Then
+            Return 655.1 + 9.563 * waga + 1.85 * wzrost - 4.676 * wiek
+
+        ElseIf plec = "M" Then
+            Return 66.5 + 13.75 * waga + 5.003 * wzrost - 6.775 * wiek
+        Else
+            Return "błąd w wyborze parametru płeć...."
+        End If
+    End Function
 End Class
