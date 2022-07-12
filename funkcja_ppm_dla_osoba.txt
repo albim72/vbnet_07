@@ -1,5 +1,6 @@
 Napisz funckję dostępną dla wszystkich klas, o nazwie policzPPM()
 Uzględnij dane: plec, waga, wzrost i wiek
+sugestia  -> zadaj płeć jako parametr tej funkcji, a nie konstruktora
 
 ppm dla kobiety -> 655.1 + 9.563*self.waga + 1.85*self.wzrost - 4.676*self.wiek
 
