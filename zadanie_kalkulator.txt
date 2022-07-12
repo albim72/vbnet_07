@@ -1,0 +1,3 @@
+Napisz program który przelicza odległość w metrach na do wyboru, odległość w milach, jardach stopach lub calach.
+Przelicznik 1 mila morska = 1850 metrów, 1 mila lądowa = 1609.344 metrów , 1 jard = 0,9144 metrów, 1 stopa = 0.30477 metrów, 
+1 cal = 0.0254 metrów Wartości: odległość w metrach i miarę wprowadź z okna...
