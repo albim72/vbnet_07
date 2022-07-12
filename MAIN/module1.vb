@@ -19,6 +19,14 @@ Module Module1
         s1.printPracownik()
         s1.printStudent()
         Console.WriteLine($"Czy osoba jest pracownikiem?? {s1.czyPracownik()}")
+        
+        Dim sp1 As Sportowiec = New Sportowiec("Maria", "Nowak", 33, 176, 63, "biegi ultra", 8, "102km 18h 17min 45s")
+        sp1.printOsoba()
+        sp1.infosport()
+        Console.WriteLine(sp1.wiekza10lat())
+        Console.WriteLine($"Czy osoba jest pracownikiem?? {sp1.czyPracownik()}")
+        
+        
         Console.ReadKey()
     End Sub
 
