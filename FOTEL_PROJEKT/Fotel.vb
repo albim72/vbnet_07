@@ -10,5 +10,11 @@
 
 
 Public Class Fotel
+  
+    Public Property nazwahandlowa As String
+    Public Property material As String
+    Public Property szerokosc As Double
+    Public Property wysokosc As Double
+    Public Property glebokosc As Double
 
 End Class
