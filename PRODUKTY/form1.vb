@@ -24,5 +24,13 @@ Public Class Form1
 
 
     End Sub
+    
+     Private Sub btnPokaz_Click(sender As Object, e As EventArgs) Handles btnPokaz.Click
+        Dim ident = InputBox("Podaj id produktu", "IDProduktu")
+        Dim printRecord As Produkty =
+            db.Produkty.FirstOrDefault(Function(ex) ex.IDProduktu.Equals(ident))
+
+        tbWynik.Text = $"Produkt -> ID: {printRecord.IDProduktu}, nazwa: {printRecord.NazwaProduktu}, cena jednostkowa: {printRecord.CenaJednostkowa}"
+    End Sub
 
 End Class
