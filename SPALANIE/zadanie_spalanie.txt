@@ -1,0 +1,7 @@
+Stwórz interfejs o nazwie IPojazd zawierający definicę dwóch funckji:
+spalanie(spal,odl)
+kosztprzejazdu(spal,odl,cena_l)
+Stwórz klasę Pojzad i zaimplementuj interfejs IPojzad
+metoda spalanie ma przeliczać średnie spalanie na 100km
+metoda kosztprzejazdu ma przeliczać koszt przejazdu na okreslonej trasie, przy okreslonym spalaniu i cenia za litr paliwa
+w module głownym stwórz obiekt klasy Pojzad i wyznacz średnie spalanie na 100, oraz koszt przejzadu przy zadanych parametrach
