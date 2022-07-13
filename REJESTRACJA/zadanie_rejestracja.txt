@@ -1,0 +1,9 @@
+Na serwerze baz danych stwórz bazę rejestracja, w bazie tej stwórz tabelę osoba z polami:
+idosoby - klucz główmny, autonumer, imie, nazwisko,data urodzenia,miasto,telefon
+
+Wstaw 3 rekordy i przetestuj
+
+Stwórz projekt Rejestracja - zbuduj okno formularz z polami danych , przyciskiem i podepnij te elementy do tabeli bazy danych, 
+tak aby można było rejestrować nowe wpisy
+
+Zastanów się nad opcją wyświetlenia danycb zarejestrowanych osób.
