@@ -10,6 +10,10 @@ Module Module1
 
         Dim trp As Trapez = New Trapez(6.8, 4.8, 4.6)
         Console.WriteLine($"Pole trapezu wynosi: {trp.policzPole()}")
+        
+        Dim kl As Kolo = New Kolo(5.5)
+        Console.WriteLine($"Pole koła wynosi: {kl.policzPole()}")
+
 
         Console.ReadKey()
 
