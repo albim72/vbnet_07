@@ -3,6 +3,10 @@ Public MustInherit Class Figura
     Public a As Double
     Public b As Double
 
+    Protected Sub New(a As Double)
+        Me.a = a
+    End Sub
+    
     Protected Sub New(a As Double, b As Double)
         Me.a = a
         Me.b = b
