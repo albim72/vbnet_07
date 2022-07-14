@@ -35,4 +35,23 @@ Public Class Form1
         zakresDouble(min, max)
         Metoda($"Liczby Double - lokalnie: {min} - {max}")
     End Sub
+    
+    Delegate Sub Uchwyt(tekst As String)
+
+    Private Sub ShowMessage(tekst As String)
+        MessageBox.Show(tekst, "Komunikat!", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    End Sub
+
+    Event Zdarzenie As Uchwyt
+
+    Private Sub btnDlg_Click(sender As Object, e As EventArgs) Handles btnDlg.Click
+
+        ShowMessage("wywołanie metody bezpośrednio")
+        Dim UchwytMetody As Uchwyt = AddressOf ShowMessage
+        UchwytMetody("Wywołanie metody przez uchwyt")
+
+        AddHandler Zdarzenie, UchwytMetody
+        RaiseEvent Zdarzenie("wywołanie metody przez zdarzenie")
+
+    End Sub
 End Class
