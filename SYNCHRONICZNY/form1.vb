@@ -19,5 +19,13 @@ Public Class Form1
         MessageBox.Show("Akcja przez zadanie ruszyła...")
         Dim wynik2 As Long = zadanie2.Result
         MessageBox.Show("Asynchronicznie przez zadanie: " & wynik2.ToString())
+         'akcja asynchroniczna przez ascync/await
+
+        Dim zadanie3 As Task(Of Long) = New Task(Of Long)(akcja, "Async/Await")
+        zadanie3.Start()
+        MessageBox.Show("Akcja przez Async/Await ruszyła...")
+        Dim wynik3 As Long = Await zadanie3
+
+        MessageBox.Show("Asynchronicznie przez async/await: " & wynik3.ToString())
     End Function
 End Class
