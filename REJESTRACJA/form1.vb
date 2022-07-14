@@ -9,7 +9,7 @@ Public Class Form1
         imie = tbImie.Text
         nazwisko = tbNazwisko.Text
         miasto = tbMiasto.Text
-        dataur = tbData.Text
+        dataur = dtPicker.Value.ToString
         telefon = tbTel.Text
 
         Dim nOsoba As New osoba()
@@ -25,7 +25,7 @@ Public Class Form1
         tbImie.Clear()
         tbNazwisko.Clear()
         tbMiasto.Clear()
-        tbData.Clear()
+        dtPicker.Value = Now
         tbTel.Clear()
 
     End Sub
