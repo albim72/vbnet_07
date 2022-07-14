@@ -11,5 +11,13 @@ Public Class Form1
                                              End Function
         Dim wynik1 As Long = akcja("synchronicznie")
         MessageBox.Show("Synchronicznie: " & wynik1.ToString())
+        
+        'akcja asynchroniczna przez zadanie (task)
+
+        Dim zadanie2 As Task(Of Long) = New Task(Of Long)(akcja, "zadanie")
+        zadanie2.Start()
+        MessageBox.Show("Akcja przez zadanie ruszyła...")
+        Dim wynik2 As Long = zadanie2.Result
+        MessageBox.Show("Asynchronicznie przez zadanie: " & wynik2.ToString())
     End Function
 End Class
