@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Komentarz do XML-->
+<rodzina>
+  <osoba>
+    <imie>Helena</imie>
+    <nazwisko>Kot</nazwisko>
+    <pseudonim>Helenka</pseudonim>
+    <wiek>35</wiek>
+    <plec>K</plec>
+  </osoba>
+  <osoba>
+    <imie>Piotr</imie>
+    <nazwisko>Kot</nazwisko>
+    <pseudonim>Kotek</pseudonim>
+    <wiek>12</wiek>
+    <plec>M</plec>
+  </osoba>
+  <osoba>
+    <imie>Klemens</imie>
+    <nazwisko>Kot</nazwisko>
+    <pseudonim>Klem</pseudonim>
+    <wiek>44</wiek>
+    <plec>M</plec>
+  </osoba>
+  <osoba>
+    <imie>Janina</imie>
+    <nazwisko>Kot</nazwisko>
+    <pseudonim>Jana</pseudonim>
+    <wiek>78</wiek>
+    <plec>K</plec>
+  </osoba>
+  <osoba>
+    <imie>Olga</imie>
+    <nazwisko>Kot</nazwisko>
+    <pseudonim>Pepa</pseudonim>
+    <wiek>17</wiek>
+    <plec>K</plec>
+  </osoba>
+</rodzina>
+
