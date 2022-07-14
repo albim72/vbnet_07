@@ -1,0 +1,8 @@
+stówrz metodę generyczną ObliczRabat(), która będzie bazować na wartość w_zakupów (wartość zakupów) w dowolmnym typie -> nazwijmy to typ T
+funkcja ma liczyć rabat według zasad:
+dla kwota >= 500 rabat 5%
+dla kwota >= 1000 rabat 10%
+dla kwota >= 1500 rabat 15%
+dla kwota >= 2000 rabat 22%
+
+Użyj tej funckji do zwrócenia wyniku za pomoca przycisku formuularza do etykiety lbWynik
