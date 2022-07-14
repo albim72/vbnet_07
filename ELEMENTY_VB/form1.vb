@@ -25,4 +25,14 @@ Public Class Form1
         Dim wynikD As Double = Kwadrat(5.89)
         Metoda($"wynik dla Long: {wynikL}, wynik dla Double: {wynikD}", "Kwadrat")
     End Sub
+    Private Sub zakresDouble(ByVal min As Double, ByRef max As Double)
+        min = Double.MinValue
+        max = Double.MaxValue
+        Metoda($"Liczby Double mają zakres od: {min} do {max}", "Typ Double")
+    End Sub
+    Private Sub btnBRef_Click(sender As Object, e As EventArgs) Handles btnBRef.Click
+        Dim min As Double = 0, max As Double = 0
+        zakresDouble(min, max)
+        Metoda($"Liczby Double - lokalnie: {min} - {max}")
+    End Sub
 End Class
