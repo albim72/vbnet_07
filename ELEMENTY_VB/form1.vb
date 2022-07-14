@@ -54,4 +54,36 @@ Public Class Form1
         RaiseEvent Zdarzenie("wywołanie metody przez zdarzenie")
 
     End Sub
+        
+         Delegate Function DInc(n As Integer) As Integer
+    Delegate Function DIsEqual(x As Double, y As Double)
+    Delegate Sub DShow(o As Object)
+    Private Sub btnLam_Click(sender As Object, e As EventArgs) Handles btnLam.Click
+        Dim Inc As DInc = Function(n As Integer) n + 1
+        Dim _Inc As Func(Of Integer, Integer) = Function(n As Integer) n + 1
+        Metoda(Inc(2).ToString())
+        Metoda(_Inc(100).ToString())
+
+        Dim ISEqual As DIsEqual = Function(x, y) x = y
+        Dim _ISEqual As Func(Of Integer, Integer, Boolean) = Function(x, y) x = y
+
+        Metoda(ISEqual(1, 1.18), ToString())
+        Metoda(_ISEqual(2, 2).ToString)
+
+        Dim Show As DShow = Sub(o) Metoda(o.ToString())
+        Dim _Show As Action(Of Object) = Sub(o) Metoda(o.ToString())
+
+        Show("Blabla")
+        _Show("Blabla")
+
+        Show(1222)
+        _Show(1222)
+
+
+        Dim slowa As String() = {"czereśnia", "jabłko", "truskawka", "kiwi", "borówka"}
+        Dim dl_najkr As Integer = slowa.Min(Function(slowo) slowo.Length)
+        Show(dl_najkr)
+
+
+    End Sub
 End Class
