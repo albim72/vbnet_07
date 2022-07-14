@@ -7,3 +7,10 @@ Stwórz projekt Rejestracja - zbuduj okno formularz z polami danych , przyciskie
 tak aby można było rejestrować nowe wpisy
 
 Zastanów się nad opcją wyświetlenia danycb zarejestrowanych osób.
+
+część II
+
+Zbuduj doatową formę o nazwie danerej
+w formie głównej stórz przycisk otwierający drugą formę
+
+w drugiej formie wyświetl za pomocą dataGrid wszystkie dane rejestracyjne
